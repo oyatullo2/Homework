@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Img } from "../../navbar/img/img"
 import { useState } from "react";
 export const Register = () => {
     const [passwordInputType, setPasswordInputType] = useState('password');
@@ -59,8 +58,7 @@ export const Register = () => {
 
     return(
         <>
-        <div className="bg-[url(/src/assets/background.svg)] bg-no-repeat  bg-center h-[92vh] overflow-x-hidden">
-            <Img/>
+        <div className="bg-[url(/src/assets/background.svg)] bg-no-repeat  bg-center h-[100vh] overflow-x-hidden flex items-center">
             <div className="w-full justify-center flex">
                 <div className="w-full bg-[#FFF6EE] text-center max-w-[700px] mx-auto rounded-[20px]">
                     <div className="">

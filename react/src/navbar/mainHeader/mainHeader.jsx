@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom"
 import { useEffect, useState } from "react";
+import {Link} from 'react-router-dom'
 
 export const MainHeader = () => {
     const [translateY, setTranslateY] = useState("-150%");
@@ -29,7 +29,7 @@ export const MainHeader = () => {
             </div>                
             <div className="gap-1 flex items-center hover:scale-[1.05] transition-all duration-500 ease-in-out active:scale-[0.90]">
                 <i className="fa-solid fa-cart-shopping"></i>
-                <p>Go to Cart</p>
+                <Link to={'/card'}><p>Go to Cart</p></Link>
             </div>
             <div className="gap-1 flex items-center hover:scale-[1.05] transition-all duration-500 ease-in-out active:scale-[0.90]">
                 <i className="fa-solid fa-user"></i>
@@ -39,7 +39,6 @@ export const MainHeader = () => {
         </div>
         </div>
         </div>
-        <Outlet/>
         </>
     )
 }

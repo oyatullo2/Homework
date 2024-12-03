@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom"
-import { Img } from "../../navbar/img/img"
 
 export const Welcome = () => {
     return(
         <>
-        <div className="bg-[url(/src/assets/background.svg)] bg-no-repeat  bg-center h-[92vh] overflow-x-hidden">
-        <Img/>
+        <div className="bg-[url(/src/assets/background.svg)] bg-no-repeat  bg-center h-[100vh] overflow-x-hidden flex items-center">
             <div className="w-full justify-center flex">
                 <div className="w-full bg-white text-center max-w-[500px] mx-auto rounded-[20px]">
                     <div className="">
