@@ -25,7 +25,7 @@ export const MainHeader = () => {
         <div className="flex w-full max-w-[456px] justify-between">
             <div className="gap-1 flex items-center hover:scale-[1.05] transition-all duration-500 ease-in-out active:scale-[0.90]">
                 <i className="fa-solid fa-bell"></i>
-                <p>Notification</p>
+                <Link to={'/notification'}><p>Notification</p></Link>
             </div>                
             <div className="gap-1 flex items-center hover:scale-[1.05] transition-all duration-500 ease-in-out active:scale-[0.90]">
                 <i className="fa-solid fa-cart-shopping"></i>

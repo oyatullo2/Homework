@@ -4,6 +4,7 @@ import { Box } from "../box/box";
 export const HomeSection = () => {
     const [params] = useSearchParams();
     const categorys = params.get('q');
+    console.log('Home');
     
 
     const data = [
@@ -12,31 +13,31 @@ export const HomeSection = () => {
           "name": "Macarons (12pcs)",
           "price": 15.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 4
         },
         {
           "id": 2,
-          "name": "Chocolate Croissant",
+          "name": "Chocolate croissant",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 5
         },
         {
           "id": 3,
-          "name": "Almond Croissant",
+          "name": "Almond croissant",
           "price": 4.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 4
         },
         {
           "id": 4,
-          "name": "Butter Croissant",
+          "name": "Butter croissant",
           "price": 2.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 5
         },
         {
@@ -44,15 +45,15 @@ export const HomeSection = () => {
           "name": "Cinnamon Roll",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7480_960_720.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 5
         },
         {
           "id": 6,
-          "name": "Plain Croissant",
+          "name": "Plain croissant",
           "price": 2.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 4
         },
         {
@@ -60,87 +61,87 @@ export const HomeSection = () => {
           "name": "Peach Muffin",
           "price": 2.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 4
         },
         {
           "id": 8,
-          "name": "Carrot Cake",
+          "name": "Carrot cake",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Popular",
+          "category": "popular",
           "rating": 5
         },
         {
           "id": 9,
-          "name": "Chocolate Cake",
+          "name": "Chocolate cake",
           "price": 4.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 4
         },
         {
           "id": 10,
-          "name": "Strawberry Cake",
+          "name": "Strawberry cake",
           "price": 4.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 4
         },
         {
           "id": 11,
-          "name": "Vanilla Cake",
+          "name": "Vanilla cake",
           "price": 4.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 4
         },
         {
           "id": 12,
-          "name": "Red Velvet Cake",
+          "name": "Red Velvet cake",
           "price": 5.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpge-5630502_960_720.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 5
         },
         {
           "id": 13,
-          "name": "Lemon Cake",
+          "name": "Lemon cake",
           "price": 4.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 4
         },
         {
           "id": 14,
-          "name": "Carrot Cake",
+          "name": "Carrot cake",
           "price": 4.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 5
         },
         {
           "id": 15,
-          "name": "Apple Pie",
+          "name": "Apple pie",
           "price": 4.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg9523_960_720.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 5
         },
         {
           "id": 16,
-          "name": "Lemon Pie",
+          "name": "Lemon pie",
           "price": 4.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 4
         },
         {
           "id": 17,
-          "name": "Cherry Pie",
+          "name": "Cherry pie",
           "price": 4.3,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Favorites",
+          "category": "favorites",
           "rating": 5
         },
         {
@@ -148,7 +149,7 @@ export const HomeSection = () => {
           "name": "French Bread",
           "price": 2.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg2922_960_720.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 5
         },
         {
@@ -156,7 +157,7 @@ export const HomeSection = () => {
           "name": "Baguette",
           "price": 2.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 4
         },
         {
@@ -164,7 +165,7 @@ export const HomeSection = () => {
           "name": "Sourdough Bread",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 5
         },
         {
@@ -172,7 +173,7 @@ export const HomeSection = () => {
           "name": "Whole Wheat Bread",
           "price": 2.7,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 5
         },
         {
@@ -180,15 +181,15 @@ export const HomeSection = () => {
           "name": "Ciabatta",
           "price": 3.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 5
         },
         {
           "id": 23,
-          "name": "Multigrain Bread",
+          "name": "Multigrain bread",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 4
         },
         {
@@ -196,7 +197,7 @@ export const HomeSection = () => {
           "name": "Garlic Bread",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 5
         },
         {
@@ -204,7 +205,7 @@ export const HomeSection = () => {
           "name": "Focaccia",
           "price": 3.3,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 4
         },
         {
@@ -212,7 +213,7 @@ export const HomeSection = () => {
           "name": "Pita Bread",
           "price": 2.9,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Bread",
+          "category": "bread",
           "rating": 5
         },
         {
@@ -220,7 +221,7 @@ export const HomeSection = () => {
           "name": "Chocolate Chip Cookies",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 5
         },
         {
@@ -228,7 +229,7 @@ export const HomeSection = () => {
           "name": "Oatmeal Cookies",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 4
         },
         {
@@ -236,7 +237,7 @@ export const HomeSection = () => {
           "name": "Peanut Butter Cookies",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 4
         },
         {
@@ -244,7 +245,7 @@ export const HomeSection = () => {
           "name": "Gingerbread Cookies",
           "price": 3.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 5
         },
         {
@@ -252,7 +253,7 @@ export const HomeSection = () => {
           "name": "Snickerdoodle Cookies",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 5
         },
         {
@@ -260,7 +261,7 @@ export const HomeSection = () => {
           "name": "Sugar Cookies",
           "price": 2.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 4
         },
         {
@@ -268,7 +269,7 @@ export const HomeSection = () => {
           "name": "Molasses Cookies",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 5
         },
         {
@@ -276,7 +277,7 @@ export const HomeSection = () => {
           "name": "Chocolate Shortbread Cookies",
           "price": 3.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 4
         },
         {
@@ -284,15 +285,15 @@ export const HomeSection = () => {
           "name": "Double Chocolate Chip Cookies",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cookie",
+          "category": "cookie",
           "rating": 5
         },
         {
           "id": 36,
-          "name": "Croissant",
+          "name": "croissant",
           "price": 2.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 4
         },
         {
@@ -300,279 +301,279 @@ export const HomeSection = () => {
           "name": "Pain au Chocolat",
           "price": 2.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 5
         },
         {
           "id": 38,
-          "name": "Almond Croissant",
+          "name": "Almond croissant",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 4
         },
         {
           "id": 39,
-          "name": "Chocolate Croissant",
+          "name": "Chocolate croissant",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 5
         },
         {
           "id": 40,
-          "name": "Butter Croissant",
+          "name": "Butter croissant",
           "price": 2.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 4
         },
         {
           "id": 41,
-          "name": "Cinnamon Croissant",
+          "name": "Cinnamon croissant",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 5
         },
         {
           "id": 42,
-          "name": "Plain Croissant",
+          "name": "Plain croissant",
           "price": 2.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 4
         },
         {
           "id": 43,
-          "name": "French Croissant",
+          "name": "French croissant",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 4
         },
         {
           "id": 44,
-          "name": "Mini Croissant",
+          "name": "Mini croissant",
           "price": 1.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Croissant",
+          "category": "croissant",
           "rating": 5
         },
         {
           "id": 45,
-          "name": "Cupcake",
+          "name": "cupcake",
           "price": 2.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 5
         },
         {
           "id": 46,
-          "name": "Chocolate Cupcake",
+          "name": "Chocolate cupcake",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 4
         },
         {
           "id": 47,
-          "name": "Vanilla Cupcake",
+          "name": "Vanilla cupcake",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 5
         },
         {
           "id": 48,
-          "name": "Red Velvet Cupcake",
+          "name": "Red Velvet cupcake",
           "price": 3.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 4
         },
         {
           "id": 49,
-          "name": "Strawberry Cupcake",
+          "name": "Strawberry cupcake",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 5
         },
         {
           "id": 50,
-          "name": "Lemon Cupcake",
+          "name": "Lemon cupcake",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 4
         },
         {
           "id": 51,
-          "name": "Chocolate Mint Cupcake",
+          "name": "Chocolate Mint cupcake",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 5
         },
         {
           "id": 52,
-          "name": "Cookies and Cream Cupcake",
+          "name": "Cookies and Cream cupcake",
           "price": 4.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 5
         },
         {
           "id": 53,
-          "name": "Carrot Cupcake",
+          "name": "Carrot cupcake",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Cupcake",
+          "category": "cupcake",
           "rating": 4
         },
         {
           "id": 54,
-          "name": "Apple Pie",
+          "name": "Apple pie",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg0141_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 5
         },
         {
           "id": 55,
-          "name": "Cherry Pie",
+          "name": "Cherry pie",
           "price": 3.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7382_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 5
         },
         {
           "id": 56,
-          "name": "Peach Pie",
+          "name": "Peach pie",
           "price": 3.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7372_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 4
         },
         {
           "id": 57,
-          "name": "Blueberry Pie",
+          "name": "Blueberry pie",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7380_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 5
         },
         {
           "id": 58,
-          "name": "Pumpkin Pie",
+          "name": "Pumpkin pie",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7370_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 4
         },
         {
           "id": 59,
-          "name": "Lemon Pie",
+          "name": "Lemon pie",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7381_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 5
         },
         {
           "id": 60,
-          "name": "Pecan Pie",
+          "name": "Pecan pie",
           "price": 3.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7378_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 5
         },
         {
           "id": 61,
-          "name": "Chocolate Pie",
+          "name": "Chocolate pie",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 4
         },
         {
           "id": 62,
-          "name": "Banoffee Pie",
+          "name": "Banoffee pie",
           "price": 3.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7385_960_720.jpg",
-          "category": "Pie",
+          "category": "pie",
           "rating": 5
         },
         {
           "id": 63,
-          "name": "Glazed Donut",
+          "name": "Glazed donut",
           "price": 1.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 5
         },
         {
           "id": 64,
-          "name": "Chocolate Donut",
+          "name": "Chocolate donut",
           "price": 2.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 4
         },
         {
           "id": 65,
-          "name": "Jelly Donut",
+          "name": "Jelly donut",
           "price": 2.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 5
         },
         {
           "id": 66,
-          "name": "Apple Cider Donut",
+          "name": "Apple Cider donut",
           "price": 2.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 4
         },
         {
           "id": 67,
-          "name": "Cinnamon Sugar Donut",
+          "name": "Cinnamon Sugar donut",
           "price": 2.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 5
         },
         {
           "id": 68,
-          "name": "Maple Bacon Donut",
+          "name": "Maple Bacon donut",
           "price": 2.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 4
         },
         {
           "id": 69,
-          "name": "Pumpkin Donut",
+          "name": "Pumpkin donut",
           "price": 2.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 5
         },
         {
           "id": 70,
-          "name": "Chocolate Glazed Donut",
+          "name": "Chocolate Glazed donut",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 4
         },
         {
           "id": 71,
-          "name": "Strawberry Donut",
+          "name": "Strawberry donut",
           "price": 2.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Donut",
+          "category": "donut",
           "rating": 5
         },
         {
@@ -580,7 +581,7 @@ export const HomeSection = () => {
           "name": "Latte",
           "price": 2.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 4
         },
         {
@@ -588,7 +589,7 @@ export const HomeSection = () => {
           "name": "Espresso",
           "price": 1.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 5
         },
         {
@@ -596,7 +597,7 @@ export const HomeSection = () => {
           "name": "Americano",
           "price": 2.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 4
         },
         {
@@ -604,7 +605,7 @@ export const HomeSection = () => {
           "name": "Cappuccino",
           "price": 2.8,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 5
         },
         {
@@ -612,7 +613,7 @@ export const HomeSection = () => {
           "name": "Macchiato",
           "price": 2.5,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 4
         },
         {
@@ -620,7 +621,7 @@ export const HomeSection = () => {
           "name": "Flat White",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 5
         },
         {
@@ -628,23 +629,23 @@ export const HomeSection = () => {
           "name": "Mocha",
           "price": 3.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 4
         },
         {
           "id": 79,
-          "name": "Iced Coffee",
+          "name": "Iced coffee",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 5
         },
         {
           "id": 80,
-          "name": "Black Coffee",
+          "name": "Black coffee",
           "price": 2.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 4
         },
         {
@@ -652,7 +653,7 @@ export const HomeSection = () => {
           "name": "Cold Brew",
           "price": 3.2,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 4
         },
         {
@@ -660,88 +661,76 @@ export const HomeSection = () => {
           "name": "Iced Latte",
           "price": 3.0,
           "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg",
-          "category": "Coffee",
+          "category": "coffee",
           "rating": 5
         },
           {
             "id": 83,
-            "name": "Vanilla Cake",
+            "name": "Vanilla cake",
             "price": 4.0,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 4
           },
           {
             "id": 84,
-            "name": "Strawberry Cake",
+            "name": "Strawberry cake",
             "price": 4.5,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 5
           },
           {
             "id": 85,
-            "name": "Chocolate Cake",
+            "name": "Chocolate cake",
             "price": 5.0,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 4
           },
           {
             "id": 86,
-            "name": "Carrot Cake",
+            "name": "Carrot cake",
             "price": 4.2,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 5
           },
           {
             "id": 87,
-            "name": "Red Velvet Cake",
+            "name": "Red Velvet cake",
             "price": 5.5,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 4
           },
           {
             "id": 88,
-            "name": "Lemon Cake",
+            "name": "Lemon cake",
             "price": 3.8,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 4
           },
           {
             "id": 89,
-            "name": "Pineapple Cake",
+            "name": "Pineapple cake",
             "price": 4.2,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 5
           },
           {
             "id": 90,
-            "name": "Coffee Cake",
+            "name": "coffee cake",
             "price": 4.5,
             "image": "https://i.pinimg.com/originals/40/78/ee/4078ee63a3887d6b06f064368f2baceb.jpg7383_960_720.jpg",
-            "category": "Cake",
+            "category": "cake",
             "rating": 4
           }
     ]
     
-      const filterData = data.filter((item) => {
-        if(categorys === 'popular') return item.category === 'Popular' 
-        if(categorys === 'favorites') return item.category === 'Favorites'
-        if(categorys === 'bread') return item.category === 'Bread'
-        if(categorys === 'cookie') return item.category === 'Cookie'
-        if(categorys === 'cupcake') return item.category === 'Cupcake'
-        if(categorys === 'pie') return item.category === 'Pie'
-        if(categorys === 'croissant') return item.category === 'Croissant'
-        if(categorys === 'donut') return item.category === 'Donut'
-        if(categorys === 'coffee') return item.category === 'Coffee'
-        if(categorys === 'cake') return item.category === 'Cake'
-
-      })
+      const filterData = categorys ? data.filter((item) => item.category === categorys) : (data);
 
     return(
         <>
@@ -756,31 +745,31 @@ export const HomeSection = () => {
             <Link to={'/home?q=favorites'}>
             <div className="cursor-pointer hover:border-b-2 hover:border-[#996531] transition-all duration-500 ease-in-out border-b-2 border-transparent hover:text-[#996531] flex items-center text-[#1C140C]">
                 <i className="fa-regular fa-heart"></i>
-                <p>Favorites</p>
+                <p>favorites</p>
             </div>
             </Link>
             <Link to={'/home?q=bread'}>
             <div className="cursor-pointer hover:border-b-2 hover:border-[#996531] transition-all duration-500 ease-in-out border-b-2 border-transparent hover:text-[#996531] flex items-center text-[#1C140C]">
                 <i className="fa-solid fa-bread-slice"></i>
-                <p>Bread</p>
+                <p>bread</p>
             </div>
             </Link>
             <Link to={'/home?q=cookie'}>
             <div className="cursor-pointer hover:border-b-2 hover:border-[#996531] transition-all duration-500 ease-in-out border-b-2 border-transparent hover:text-[#996531] flex items-center text-[#1C140C]">
                 <i className="fa-solid fa-cookie"></i>
-                <p>Cookie</p>
+                <p>cookie</p>
             </div>
             </Link>
             <Link to={'/home?q=croissant'}>
             <div className="cursor-pointer hover:border-b-2 hover:border-[#996531] transition-all duration-500 ease-in-out border-b-2 border-transparent hover:text-[#996531] flex items-center text-[#1C140C]">
                 <i className="fa-solid fa-bread-slice"></i>
-                <p>Croissant</p>
+                <p>croissant</p>
             </div>
             </Link>
             <Link to={'/home?q=cupcake'}>
             <div className="cursor-pointer hover:border-b-2 hover:border-[#996531] transition-all duration-500 ease-in-out border-b-2 border-transparent hover:text-[#996531] flex items-center text-[#1C140C]">
                 <i className="fa-solid fa-cake-candles"></i>
-                <p>Cupcake</p>
+                <p>cupcake</p>
             </div>
             </Link>
             <Link to={'/home?q=pie'}>
@@ -792,7 +781,7 @@ export const HomeSection = () => {
             <Link to={'/home?q=donut'}>
             <div className="cursor-pointer hover:border-b-2 hover:border-[#996531] transition-all duration-500 ease-in-out border-b-2 border-transparent hover:text-[#996531] flex items-center text-[#1C140C]">
                 <i className="fa-solid fa-certificate"></i>
-                <p>Donut</p>
+                <p>donut</p>
             </div>
             </Link>
             <Link to={'/home?q=coffee'}>
@@ -804,7 +793,7 @@ export const HomeSection = () => {
             <Link to={'/home?q=cake'}>
             <div className="cursor-pointer hover:border-b-2 hover:border-[#996531] transition-all duration-500 ease-in-out border-b-2 border-transparent hover:text-[#996531] flex items-center text-[#1C140C]">
                 <i className="fa-solid fa-cake-candles"></i>
-                <p>Cake</p>
+                <p>cake</p>
             </div>
             </Link>
         </div>

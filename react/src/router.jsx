@@ -9,6 +9,7 @@ import { Layout } from "./navbar/layout/loyouts";
 import { Product } from "./pages/product/product";
 import { Error } from "./pages/error/error";
 import { Account } from "./pages/account/account";
+import { Notification } from "./pages/notification/notification";
 
 export const Router = () => {
 return(
@@ -23,6 +24,7 @@ return(
                 <Route path="card" element={<Card/>}/>
                 <Route path="product/:productId" element={<Product/>}/>
                 <Route path="account" element={<Account/>}/>
+                <Route path="/notification" element={<Notification/>}/>
             </Route>
             </Route>
             <Route path="*" element={<Error/>}/>

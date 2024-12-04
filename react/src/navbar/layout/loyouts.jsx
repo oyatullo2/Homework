@@ -4,7 +4,7 @@ import { MainHeader } from "../mainHeader/mainHeader"
 
 export const Layout = () => {
     const {pathname} = useLocation()
-    const pathNames = pathname !== '/' && pathname !== '/register' && pathname !== '/login' && pathname !== '/error' && pathname !== '/card' && !pathname.startsWith('/product/') && pathname !== '/account';    
+    const pathNames = pathname !== '/' && pathname !== '/register' && pathname !== '/login' && pathname !== '/error' && pathname !== '/card' && !pathname.startsWith('/product/') && pathname !== '/account' && pathname !== '/notification';    
 
     return(
         <>

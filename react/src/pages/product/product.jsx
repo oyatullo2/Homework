@@ -6,20 +6,25 @@ export const Product = () => {
     const state = location.state;
     const [count, setCount] = useState(1);
     const [like, setLike] = useState(false);
+    const [image, setImage] = useState(false);
 
     const likeCodes = () => {
         setLike((prev) => !prev)
     } 
 
+    const imageFunction = () => {
+        setImage((prev) => !prev)
+    }
+
     return(
         <>
-        <div className="w-full mt-[20px] gap-[20px] h-[9vh] flex items-start justify-center">
-            <div className="w-full max-w-fit relative">
+        <div className="transition-all duration-500 ease-in-out w-full mt-[20px] gap-[20px] h-[9vh] flex items-start justify-center">
+            <div className="w-full max-w-fit relative" >
                 <Link to={'/home'}><button className="text-[#996531] absolute left-[25px] top-[15px] bg-white w-10 h-10 flex justify-center items-center rounded-full text-[20px]"><i className="fa-solid fa-chevron-left"></i></button></Link>
                 <button  onClick={likeCodes} className="text-[#996531] absolute right-[25px] top-[15px] bg-white w-10 h-10 flex justify-center items-center rounded-full text-[20px]">{like ? <i className="fa-solid fa-heart"></i> : <i className="fa-regular fa-heart"></i>}</button>
-                <img className="max-w-[400px] object-fill rounded-[30px] h-[300px]" src={state.image} alt="Rasm bor" />
+                <img onClick={imageFunction} className="cursor-pointer max-w-[400px] object-fill rounded-[30px] h-[300px]" src={state.image} alt="Rasm bor" />
             </div>
-            <div className="flex flex-col mt-[20px]">
+            <div className="flex flex-col mt-[20px]" >
                 <div className="flex gap-[225px] mb-[7px]">
                     <p className="text-[25px] font-[500]">{state.name}</p>
                     <p className="text-[25px] font-[500]">${state.price}</p>
@@ -83,6 +88,11 @@ export const Product = () => {
                     </div>
                 </div>
             </div>
+        <div  className="bg-[#cbcbcb] w-screen h-[92vh] absolute mt-[-20px] transition-all duration-500 ease-in-out" onClick={()=>setImage(false)} style={{display : image ? 'block' : 'none'}}>
+        <div id="image" className="w-full absolute max-w-[900px] mt-[20px]  mx-[20%]" >
+                <img src={state.image} alt="Rasm bor!" className="cursor-pointer rounded-[20px]" onClick={()=>setImage(false)}/>
+        </div>
+        </div>
         </div>
         </>
     )
