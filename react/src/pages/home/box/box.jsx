@@ -3,12 +3,11 @@ import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export const Box = (item) => {
-    const [like, setLike] = useState(false);
     const [likes, setLikes] = useState({});
     const likeCodes = (id) => {
         setLikes((prevLikes) => ({
             ...prevLikes,
-            [id]: !prevLikes[id],  // Toggle like for the specific item by its ID
+            [id]: !prevLikes[id],  
         }));
     }
     return(
@@ -17,7 +16,7 @@ export const Box = (item) => {
             <div key={datas.id} className="flex flex-col w-full max-w-[350px] bg-white rounded-[30px]">
                 <div className="flex relative flex-col">
                     <button onClick={() => likeCodes(datas.id)} className="absolute top-[10px] right-[10px] bg-white w-10 h-10 flex justify-center items-center rounded-full text-[#704A24] font-[600] text-[20px] transition-all duration-500 ease-in-out">{likes[datas.id] ? <i className="fa-solid fa-heart"></i> : <i className="fa-regular fa-heart"></i>}</button>
-                <Link key={datas.id} to={`/product/${datas.id}`}>
+                <Link key={datas.id} to={`/product/${datas.id}`} state = {datas}>
                     <img src="/src/assets/boxImg.svg" alt="Rasm bor" />
                 </Link>
                     <Link to={'/card'}><button className="absolute bottom-[10px] right-[10px] bg-white px-[15px] py-[6px] rounded-[30px]">Add to Cart <i className="fa-brands fa-cc-visa"></i></button></Link>
@@ -35,7 +34,7 @@ export const Box = (item) => {
                 </div>
             </div>
         ))}
-
+        
         <Outlet/>
         </>
     )

@@ -8,6 +8,7 @@ import { Card } from "./pages/card/card";
 import { Layout } from "./navbar/layout/loyouts";
 import { Product } from "./pages/product/product";
 import { Error } from "./pages/error/error";
+import { Account } from "./pages/account/account";
 
 export const Router = () => {
 return(
@@ -20,8 +21,9 @@ return(
             <Route element={<Layout/>}>
                 <Route path="home" element={<Home/>}/>
                 <Route path="card" element={<Card/>}/>
-            </Route>
                 <Route path="product/:productId" element={<Product/>}/>
+                <Route path="account" element={<Account/>}/>
+            </Route>
             </Route>
             <Route path="*" element={<Error/>}/>
         </Routes>
