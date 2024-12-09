@@ -1,5 +1,5 @@
 export const Notification = () => {
-    console.log('Notification');
+    
     return(
     <>
     <div className="w-full h-[92vh] flex justify-center">

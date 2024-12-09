@@ -4,35 +4,30 @@ export const Card = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [cardHolder, setCardHolder] = useState('');
     const [cvv, setCvv] = useState('');
-    const main = document.getElementById('main');
-    const loading = document.getElementById('loading');
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate('');
 
    const handReset = () => {
         if(cardNumber.length === 19 && cardHolder.length === 5 && cvv.length === 3){
-            main.style.display = 'none'
-            loading.style.display = 'flex'
+                setLoading(true);
+                setCardNumber('')
+                setCardHolder('')
+                setCvv('')
+                    const time = setTimeout(() => {
+                        setLoading(false);
+                        navigate('/home')
+                    }, 3000);
 
-            const interval = setTimeout(()=>{
-                navigate('/home')                
-                clearInterval(interval)
-                loading.style.display = 'none'
-                main.style.display = 'flex'
-            },6000)
+                    return () => clearTimeout(time);
         }
         else{
-            alert('Please fill all the fields')
+            alert('Please fill all the fields !')
         }
    }
 
-   document.addEventListener('DOMContentLoaded',() => {
-        loading.style.display = 'none'
-        main.style.display = 'flex'
-   })
-     
     return(
         <>
-        <div id="main" className="w-full flex-col h-[92vh] flex items-center justify-center">
+        <div className="w-full flex-col h-[92vh] flex items-center justify-center" style={{display : loading ? 'none' : 'flex'}}>
             <div className="border-2 border-[#704A24] w-[600px] h-[300px] rounded-xl bg-white shadow-[0px_0px_10px_3px_rgb(0,0,0,0.3)]">
                 <div className="flex flex-col">
                     <div className="flex flex-col w-full max-w-[500px] mx-auto gap-[10px] mt-[40px]">
@@ -53,7 +48,7 @@ export const Card = () => {
             </div>
             <button onClick={handReset} className="mt-[50px] bg-[#FBA651] text-white py-[8px] w-full max-w-[300px] rounded-[10px] font-[500] text-[20px] flex items-center justify-center gap-[10px]">Pay <i className="fa-brands fa-cc-visa"></i></button>
         </div>
-        <div id="loading" className="w-full h-[92vh] items-center justify-center flex">
+        <div className="w-full h-[92vh] items-center justify-center flex" style={{display : loading ? 'flex' : 'none'}}>
             <p className="text-[40px] font-[600] text-green-500">Payment verification ...</p>
         </div>
         </>

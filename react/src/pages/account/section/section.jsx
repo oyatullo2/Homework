@@ -20,7 +20,7 @@ export const AccountSection = () => {
                     <p>Wallet</p>
                 </div>
                 <div className="flex flex-col">
-                    <i class="fa-brands fa-first-order"></i>
+                    <i className="fa-brands fa-first-order"></i>
                     <p>Orders</p>
                 </div>
             </div>

@@ -4,7 +4,6 @@ import { Box } from "../box/box";
 export const HomeSection = () => {
     const [params] = useSearchParams();
     const categorys = params.get('q');
-    console.log('Home');
     
 
     const data = [
