@@ -1,20 +1,7 @@
-import { useState } from "react";
 export const Sidebar = () => {
-  const [translateX, setTranslateX] = useState("-100%");
-  const [opacity, setOpacity] = useState(0);
-
-  const interval = setTimeout(() => {
-    setTranslateX("0%");
-    setOpacity(1);
-    return () => clearInterval(interval);
-  }, 1000);
-
   return (
     <>
-      <div
-        className="trnasition-all duration-500 bg-[#FAFAFA] h-[92vh] font-[450] w-full max-w-[320px]"
-        style={{ transform: `translateX(${translateX})`, opacity: opacity }}
-      >
+      <div className="bg-[#FAFAFA] h-[92vh] font-[450] w-full max-w-[320px] delay-1000 animate-[slideFromLeft_1s_ease_forwards]">
         <div className="w-full text-center justify-center items-center flex flex-col">
           <div className="mt-[20px] mb-[30px]">
             <input

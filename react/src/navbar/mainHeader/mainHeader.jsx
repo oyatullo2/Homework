@@ -1,23 +1,12 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MainContext } from "../../context/main-cntext";
 import { useNavigate } from "react-router-dom";
 
 export const MainHeader = () => {
   const { cart } = useContext(MainContext);
-  const [translateY, setTranslateY] = useState("-150%");
-  const [opacity, setOpacity] = useState(0);
   const { pathname } = useLocation();
   const navigate = useNavigate("");
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTranslateY("0%");
-      setOpacity(1);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleGoToCartProduct = () => {
     if (cart.length === 0) {
@@ -29,14 +18,7 @@ export const MainHeader = () => {
 
   return (
     <>
-      <div
-        className="w-full bg-white mt-1 px-[10px] translate-x-[-100%]"
-        style={{
-          opacity: opacity,
-          transform: `translateY(${translateY})`,
-          transition: "transform 0.5s ease",
-        }}
-      >
+      <div className="w-full bg-white mt-1 px-[10px] translate-x-[-100%] animate-[slideFromTop_0.5s_ease_forwards]">
         <div className="flex w-full items-center max-w-[1460px] mx-auto ">
           <div className="w-full  max-w-[300px]">
             <img
@@ -65,7 +47,7 @@ export const MainHeader = () => {
                 className="gap-1 flex items-center hover:scale-[1.05] relative transition-all duration-500 ease-in-out active:scale-[0.90]"
               >
                 {!!cart?.length && pathname !== "/cartproduct" && (
-                  <div className="bg-red-500 w-2 h-2 rounded-full absolute top-0 -left-1" ></div>
+                  <div className="bg-red-500 w-2 h-2 rounded-full absolute top-0 -left-1"></div>
                 )}
                 <i className="fa-solid fa-cart-shopping"></i>
                 <p>Go to Cart</p>
