@@ -10,6 +10,7 @@ import { Product } from "./pages/product/product";
 import { Error } from "./pages/error/error";
 import { Account } from "./pages/account/account";
 import { Notification } from "./pages/notification/notification";
+import { CartProduct } from "./pages/cartProduct/cartProduct";
 
 export const Router = () => {
 return(
@@ -24,7 +25,8 @@ return(
                 <Route path="card" element={<Card/>}/>
                 <Route path="product/:productId" element={<Product/>}/>
                 <Route path="account" element={<Account/>}/>
-                <Route path="/notification" element={<Notification/>}/>
+                <Route path="notification" element={<Notification/>}/>
+                <Route path="cartproduct" element={<CartProduct/>}/>
             </Route>
             </Route>
             <Route path="*" element={<Error/>}/>
