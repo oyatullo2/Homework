@@ -4,7 +4,7 @@ import { MainContext } from "../../context/main-cntext";
 import { useNavigate } from "react-router-dom";
 
 export const MainHeader = () => {
-  const { cart } = useContext(MainContext);
+  const { cart, favorites } = useContext(MainContext);
   const { pathname } = useLocation();
   const navigate = useNavigate("");
 
@@ -36,6 +36,15 @@ export const MainHeader = () => {
               </Link>
             </div>
             <div className="flex w-full max-w-[456px] justify-between">
+              <div className="gap-1 relative flex items-center hover:scale-[1.05] transition-all duration-500 ease-in-out active:scale-[0.90]">
+                {!!favorites?.length && pathname !== "/favorites" && (
+                  <div className="bg-red-500 w-2 h-2 rounded-full absolute top-0 -left-1"></div>
+                )}
+                <i className="fa-solid fa-heart"></i>
+                <Link to={"/favorites"}>
+                  <p>Favorites</p>
+                </Link>
+              </div>
               <div className="gap-1 flex items-center hover:scale-[1.05] transition-all duration-500 ease-in-out active:scale-[0.90]">
                 <i className="fa-solid fa-bell"></i>
                 <Link to={"/notification"}>

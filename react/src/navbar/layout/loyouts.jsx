@@ -13,7 +13,8 @@ export const Layout = () => {
     !pathname.startsWith("/product/") &&
     pathname !== "/account" &&
     pathname !== "/cartproduct" &&
-    pathname !== "/notification";
+    pathname !== "/notification" &&
+    pathname !== "/favorites";
 
   return (
     <>
