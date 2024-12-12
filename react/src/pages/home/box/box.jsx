@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { MainContext } from "../../../context/main-cntext";
 
 export const Box = ({ item: product }) => {
-  const { cart, setCart } = useContext(MainContext);
+  const { cart, setCart, setFavorites, favorites } = useContext(MainContext);
+  const isFavorite = favorites.find((item) => item.id === product.id);
   const [likes, setLikes] = useState({});
   const [addedToCart, setAddedToCart] = useState({});
   const likeCodes = (id) => {
@@ -21,6 +22,16 @@ export const Box = ({ item: product }) => {
       [id]: true,
     }));
   };
+
+  const handleFavorite = (product) => () => {
+    setFavorites((prev) => {
+      if (prev.find((item) => item.id === product.id)) {
+        return prev.filter((item) => item.id !== product.id);
+      } else {
+        return [...prev, product];
+      }
+    });
+  };
   return (
     <>
       <div
@@ -29,10 +40,10 @@ export const Box = ({ item: product }) => {
       >
         <div className="flex relative flex-col">
           <button
-            onClick={() => likeCodes(product.id)}
+            onClick={handleFavorite(product)}
             className="absolute top-[10px] right-[10px] bg-white w-10 h-10 flex justify-center items-center rounded-full text-[#704A24] font-[600] text-[20px] transition-all duration-500 ease-in-out"
           >
-            {likes[product.id] ? (
+            {isFavorite ? (
               <i className="fa-solid fa-heart"></i>
             ) : (
               <i className="fa-regular fa-heart"></i>

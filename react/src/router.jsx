@@ -11,26 +11,28 @@ import { Error } from "./pages/error/error";
 import { Account } from "./pages/account/account";
 import { Notification } from "./pages/notification/notification";
 import { CartProduct } from "./pages/cartProduct/cartProduct";
+import { Favorites } from "./pages/favorites";
 
 export const Router = () => {
-return(
+  return (
     <>
-        <Routes>
-            <Route path="/" element={<Welcome/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/register" element={<Register/>}/>
-            <Route element={<MainRouter/>}>
-            <Route element={<Layout/>}>
-                <Route path="home" element={<Home/>}/>
-                <Route path="card" element={<Card/>}/>
-                <Route path="product/:productId" element={<Product/>}/>
-                <Route path="account" element={<Account/>}/>
-                <Route path="notification" element={<Notification/>}/>
-                <Route path="cartproduct" element={<CartProduct/>}/>
-            </Route>
-            </Route>
-            <Route path="*" element={<Error/>}/>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route element={<MainRouter />}>
+          <Route element={<Layout />}>
+            <Route path="home" element={<Home />} />
+            <Route path="card" element={<Card />} />
+            <Route path="product/:productId" element={<Product />} />
+            <Route path="account" element={<Account />} />
+            <Route path="notification" element={<Notification />} />
+            <Route path="favorites" element={<Favorites />} />
+            <Route path="cartproduct" element={<CartProduct />} />
+          </Route>
+        </Route>
+        <Route path="*" element={<Error />} />
+      </Routes>
     </>
-)
-}
+  );
+};
